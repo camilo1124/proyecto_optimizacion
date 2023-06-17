@@ -1,0 +1,21 @@
+\* Max_Profits *\
+Maximize
+Ganancias_totales_por_hectaria_de_cultivo: 36000000 Hectaria_aguacate
+ + 19200000 Hectaria_banano + 5500000 Hectaria_cacao + 14605000 Hectaria_cafe
+Subject To
+Limitacion_de_hectareas: Hectaria_aguacate + Hectaria_banano + Hectaria_cacao
+ + Hectaria_cafe <= 1000
+Limitación_de_presupuesto: 11791226 Hectaria_aguacate
+ + 8081101 Hectaria_banano + 6829041 Hectaria_cacao + 9107808 Hectaria_cafe
+ <= 100000000
+Bounds
+ 0 <= Hectaria_aguacate
+ 0 <= Hectaria_banano
+ 0 <= Hectaria_cacao
+ 0 <= Hectaria_cafe
+Generals
+Hectaria_aguacate
+Hectaria_banano
+Hectaria_cacao
+Hectaria_cafe
+End
