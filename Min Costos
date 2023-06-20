@@ -1,0 +1,22 @@
+\* Min_Costs *\
+Minimize
+Costos_por_hectaria_de_cultivo: 13109686 Hectareas_de_Aguacate
+ + 9087644 Hectareas_de_Banano + 11876986 Hectareas_de_Limon
+ + 5298019 Hectareas_de_Mango
+Subject To
+Limitación_de_hectareas: Hectareas_de_Aguacate + Hectareas_de_Banano
+ + Hectareas_de_Limon + Hectareas_de_Mango <= 10
+Toneladas_minimas_deseadas: 9.77 Hectareas_de_Aguacate
+ + 24.88 Hectareas_de_Banano + 10.95 Hectareas_de_Limon
+ + 11.49 Hectareas_de_Mango >= 3
+Bounds
+ 0 <= Hectareas_de_Aguacate
+ 0 <= Hectareas_de_Banano
+ 0 <= Hectareas_de_Limon
+ 0 <= Hectareas_de_Mango
+Generals
+Hectareas_de_Aguacate
+Hectareas_de_Banano
+Hectareas_de_Limon
+Hectareas_de_Mango
+End

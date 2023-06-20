@@ -1,21 +1,29 @@
-\* Max_Profits *\
+\* Max_Production *\
 Maximize
-Ganancias_totales_por_hectaria_de_cultivo: 36000000 Hectaria_aguacate
- + 19200000 Hectaria_banano + 5500000 Hectaria_cacao + 14605000 Hectaria_cafe
+Ganancias_por_hectaria_de_cultivo: 19540000 Hectareas_de_Aguacate
+ + 3939480 Hectareas_de_Guayaba + 18253650 Hectareas_de_Limon
+ + 18912600 Hectareas_de_Mandarina + 9971940 Hectareas_de_Mora
+ + 71182960 Hectareas_de_Piña
 Subject To
-Limitacion_de_hectareas: Hectaria_aguacate + Hectaria_banano + Hectaria_cacao
- + Hectaria_cafe <= 1000
-Limitación_de_presupuesto: 11791226 Hectaria_aguacate
- + 8081101 Hectaria_banano + 6829041 Hectaria_cacao + 9107808 Hectaria_cafe
- <= 100000000
+Limitación_de_hectareas: Hectareas_de_Aguacate + Hectareas_de_Guayaba
+ + Hectareas_de_Limon + Hectareas_de_Mandarina + Hectareas_de_Mora
+ + Hectareas_de_Piña <= 15
+Limitación_de_presupuesto: 19540000 Hectareas_de_Aguacate
+ + 3939480 Hectareas_de_Guayaba + 18253650 Hectareas_de_Limon
+ + 18912600 Hectareas_de_Mandarina + 9971940 Hectareas_de_Mora
+ + 71182960 Hectareas_de_Piña <= 70000000
 Bounds
- 0 <= Hectaria_aguacate
- 0 <= Hectaria_banano
- 0 <= Hectaria_cacao
- 0 <= Hectaria_cafe
+ 0 <= Hectareas_de_Aguacate
+ 0 <= Hectareas_de_Guayaba
+ 0 <= Hectareas_de_Limon
+ 0 <= Hectareas_de_Mandarina
+ 0 <= Hectareas_de_Mora
+ 0 <= Hectareas_de_Piña
 Generals
-Hectaria_aguacate
-Hectaria_banano
-Hectaria_cacao
-Hectaria_cafe
+Hectareas_de_Aguacate
+Hectareas_de_Guayaba
+Hectareas_de_Limon
+Hectareas_de_Mandarina
+Hectareas_de_Mora
+Hectareas_de_Piña
 End
